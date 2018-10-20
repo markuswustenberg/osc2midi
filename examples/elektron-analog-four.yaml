@@ -1,0 +1,31 @@
+endpoints:
+- address: /Perf/abcdefghij/1
+  cc:
+  - channel: 8
+    number: 3
+  - channel: 8
+    number: 64
+- address: /Perf/abcdefghij/2
+  cc:
+  - channel: 8
+    number: 4
+  - channel: 8
+    number: 65
+- address: /Perf/abcdefghij/3
+  cc:
+  - channel: 8
+    number: 8
+  - channel: 8
+    number: 66
+- address: /Perf/abcdefghij/4
+  cc:
+  - channel: 8
+    number: 9
+  - channel: 8
+    number: 67
+- address: /Perf/abcdefghij/5
+  cc:
+  - channel: 8
+    number: 11
+  - channel: 8
+    number: 68
