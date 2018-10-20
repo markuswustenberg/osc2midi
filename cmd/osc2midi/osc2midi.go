@@ -9,6 +9,8 @@ import (
 
 func main() {
 	port := flag.Int("port", osc2midi.DefaultOSCPort, "the udp port to listen on for OSC messages")
+	debug := flag.Bool("debug", false, "debug mode")
+	midiDevice := flag.String("midi-device", "", "the midi device to use (case-insensitive substring matching)")
 	flag.Parse()
 
 	if len(flag.Args()) == 0 {
@@ -18,7 +20,9 @@ func main() {
 
 	args := osc2midi.Arguments{
 		ConfigFilename: flag.Args()[0],
-		Port:           port,
+		Port:           *port,
+		Debug:          *debug,
+		MidiDevice:     *midiDevice,
 	}
 
 	if err := osc2midi.Start(args); err != nil {

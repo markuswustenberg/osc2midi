@@ -8,7 +8,7 @@ type Config struct {
 // Endpoint is for OSC address and MIDI mapping definitions.
 type Endpoint struct {
 	Address string
-	CC      *MidiCC
+	CC      []MidiCC
 }
 
 // MidiCC defines a channel and CC number to send on.
